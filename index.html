@@ -7,6 +7,53 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>hello <a>I am a child</a></h1>
+    <header>
+      <button class="menu" id="menu"></button>
+      <button class="github-logo" id="github-logo"></button>
+      <form>
+        <label for="search-box">Search</label>
+        <input type="text" placeholder="Type / to search" id="search-box" />
+      </form>
+      <button class="comand" id="command"></button>
+      <button class="createNew" id="createNew"></button>
+      <button class="issues" id="issues"></button>
+      <button class="pulls" id="pulls"></button>
+      <button class="notification" id="notification"></button>
+      <button class="profile" id="profile"></button>
+    </header>
+    <div class="content">
+      <div class="tools" id="tools">
+        <div class="tools-header" id="tools-header">
+          <div class="home" id="home">Home</div>
+          <a class="feedback" id="feedback">Send Feedback</a>
+          <button class="filter" id="filter"></button>
+        </div>
+        <article>
+          <div class="start-code" id="start-code">
+            <img src="" alt="start to code image" class="code" id="code" />
+            <div class="write-code-title" id="write-code-title">
+              Start writting code
+            </div>
+            <button class="remove" id="remove"></button>
+          </div>
+        </article>
+      </div>
+      <div class="recent" id="recent"></div>
+    </div>
+    <aside>
+      <div class="top-repositories" id="top-repositories">Top Repositories</div>
+      <button class="new" id="new"></button>
+      <form>
+        <label for="search">Search</label>
+        <input type="text" placeholder="Find a repository" id="search" />
+      </form>
+      <div class="repository" id="repository">
+        <button class="repository-image" id="repository-image"></button>
+        <a class="repository-name" id="repository-name"></a>
+      </div>
+      <a class="show-more-repositories" id="show-more-repositories"></a>
+      <div class="activity" id="activity"></div>
+      <div class="activity-text" id="activity-text"></div>
+    </aside>
   </body>
 </html>
