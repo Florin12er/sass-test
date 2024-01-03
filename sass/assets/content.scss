@@ -1,0 +1,36 @@
+$width-of-home: 800px;
+$width-of-latest-changes: 500px;
+
+.content {
+  width: $width-of-home;
+
+  .tools-header {
+    display: flex;
+
+    .feedback {
+      margin-left: auto;
+
+    }
+
+    .filter {
+      display: flex;
+      gap: 3px;
+    }
+
+  }
+
+  article {
+
+    .start-code {
+      display: flex;
+
+      .remove {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.lastest-changes {
+  width: $width-of-latest-changes;
+}

@@ -1,7 +1,3 @@
-h1 {
-  color: blue;
-
-  a {
-    color: red;
-  }
-}
+@import "assets/reset";
+@import "assets/dashboard";
+@import "assets/content";

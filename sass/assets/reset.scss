@@ -120,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -128,36 +128,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-.dashboard {
-  display: flex;
-}
-.dashboard form {
-  margin-left: auto;
-}
-
-.content {
-  width: 800px;
-}
-.content .tools-header {
-  display: flex;
-}
-.content .tools-header .feedback {
-  margin-left: auto;
-}
-.content .tools-header .filter {
-  display: flex;
-  gap: 3px;
-}
-.content article .start-code {
-  display: flex;
-}
-.content article .start-code .remove {
-  margin-left: auto;
-}
-
-.lastest-changes {
-  width: 500px;
-}
-
-/*# sourceMappingURL=styles.css.map */
