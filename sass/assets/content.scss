@@ -1,5 +1,7 @@
-$width-of-home: 800px;
+$width-of-home: 350px;
 $width-of-latest-changes: 500px;
+
+$gray-color: gray;
 
 .content {
   width: $width-of-home;
@@ -20,6 +22,18 @@ $width-of-latest-changes: 500px;
   }
 
   article {
+    .start_new_repo {
+      background: $gray-color;
+      padding-bottom: 4.575rem;
+    }
+
+    .Help {
+      background: $gray-color;
+
+      .help-repository {
+        margin-bottom: 10px;
+      }
+    }
 
     .start-code {
       display: flex;

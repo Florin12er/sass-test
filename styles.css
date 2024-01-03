@@ -137,7 +137,7 @@ table {
 }
 
 .content {
-  width: 800px;
+  width: 350px;
 }
 .content .tools-header {
   display: flex;
@@ -148,6 +148,16 @@ table {
 .content .tools-header .filter {
   display: flex;
   gap: 3px;
+}
+.content article .start_new_repo {
+  background: gray;
+  padding-bottom: 4.575rem;
+}
+.content article .Help {
+  background: gray;
+}
+.content article .Help .help-repository {
+  margin-bottom: 10px;
 }
 .content article .start-code {
   display: flex;
