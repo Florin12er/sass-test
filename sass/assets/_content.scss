@@ -1,0 +1,119 @@
+$width-of-home: 350px;
+$width-of-latest-changes: 500px;
+
+$gray-color: gray;
+$semi-black-color: #0f172a;
+$white-color: white;
+
+.content {
+  width: $width-of-home;
+
+  .tools-header {
+    display: flex;
+
+    .feedback {
+      margin-left: auto;
+
+    }
+
+    .filter {
+      display: flex;
+      gap: 3px;
+    }
+
+  }
+
+  article {
+    .start_new_repo {
+      background: $gray-color;
+      color: $white-color;
+      padding-bottom: 4.575rem;
+    }
+
+    .Help {
+      background: $gray-color;
+      color: $white-color;
+
+      .help-repository {
+        margin-bottom: 10px;
+      }
+    }
+
+    .start-code {
+      display: flex;
+
+      .remove {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.lastest-changes {
+  width: $width-of-latest-changes;
+  background: $semi-black-color;
+  color: $white-color;
+
+
+  .lastest-changes-text {
+
+    .dot {
+      position: absolute;
+    }
+
+    hr {
+      position: relative;
+      left: -34px;
+      top: 46px;
+      z-index: -1;
+      width: 80px;
+      margin-left: 0;
+      rotate: 90deg;
+    }
+
+    .lastest-changes-body {
+      position: relative;
+      left: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  .view-changelog {
+    position: relative;
+    left: 20px;
+  }
+}
+
+.explore {
+  background: $semi-black-color;
+  color: $white-color;
+  width: $width-of-latest-changes;
+
+  span {
+    display: flex;
+
+    button {
+      margin-left: 40px;
+    }
+  }
+
+  .explore-repos-description {
+    display: flex;
+    gap: 10px;
+
+    .color {
+      width: 20px;
+      height: 20px;
+      background: #facc15;
+      border-radius: 50%;
+    }
+  }
+
+  hr {
+    width: 97%;
+  }
+}

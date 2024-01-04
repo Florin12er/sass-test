@@ -87,7 +87,6 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -151,10 +150,12 @@ table {
 }
 .content article .start_new_repo {
   background: gray;
+  color: white;
   padding-bottom: 4.575rem;
 }
 .content article .Help {
   background: gray;
+  color: white;
 }
 .content article .Help .help-repository {
   margin-bottom: 10px;
@@ -168,6 +169,60 @@ table {
 
 .lastest-changes {
   width: 500px;
+  background: #0f172a;
+  color: white;
+}
+.lastest-changes .lastest-changes-text .dot {
+  position: absolute;
+}
+.lastest-changes .lastest-changes-text hr {
+  position: relative;
+  left: -34px;
+  top: 46px;
+  z-index: -1;
+  width: 80px;
+  margin-left: 0;
+  rotate: 90deg;
+}
+.lastest-changes .lastest-changes-text .lastest-changes-body {
+  position: relative;
+  left: 20px;
+}
+.lastest-changes .lastest-changes-text:last-child {
+  margin-bottom: 10px;
+}
+.lastest-changes .view-changelog {
+  position: relative;
+  left: 20px;
+}
+
+.explore {
+  background: #0f172a;
+  color: white;
+  width: 500px;
+}
+.explore span {
+  display: flex;
+}
+.explore span button {
+  margin-left: 40px;
+}
+.explore .explore-repos-description {
+  display: flex;
+  gap: 10px;
+}
+.explore .explore-repos-description .color {
+  width: 20px;
+  height: 20px;
+  background: #facc15;
+  border-radius: 50%;
+}
+.explore hr {
+  width: 97%;
+}
+
+.my-repositories .new {
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
