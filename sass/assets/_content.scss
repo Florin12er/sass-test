@@ -1,9 +1,6 @@
 $width-of-home: 350px;
 $width-of-latest-changes: 500px;
 
-$gray-color: gray;
-$semi-black-color: #0f172a;
-$white-color: white;
 
 .content {
   width: $width-of-home;
@@ -28,6 +25,10 @@ $white-color: white;
       background: $gray-color;
       color: $white-color;
       padding-bottom: 4.575rem;
+
+      .type_repo {
+        display: flex;
+      }
     }
 
     .Help {
@@ -98,6 +99,10 @@ $white-color: white;
 
     button {
       margin-left: 40px;
+
+      &:focus {
+        fill: yellow;
+      }
     }
   }
 

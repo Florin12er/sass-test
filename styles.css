@@ -149,13 +149,16 @@ table {
   gap: 3px;
 }
 .content article .start_new_repo {
-  background: gray;
-  color: white;
+  background: #52525b;
+  color: #fafafa;
   padding-bottom: 4.575rem;
 }
+.content article .start_new_repo .type_repo {
+  display: flex;
+}
 .content article .Help {
-  background: gray;
-  color: white;
+  background: #52525b;
+  color: #fafafa;
 }
 .content article .Help .help-repository {
   margin-bottom: 10px;
@@ -170,7 +173,7 @@ table {
 .lastest-changes {
   width: 500px;
   background: #0f172a;
-  color: white;
+  color: #fafafa;
 }
 .lastest-changes .lastest-changes-text .dot {
   position: absolute;
@@ -198,7 +201,7 @@ table {
 
 .explore {
   background: #0f172a;
-  color: white;
+  color: #fafafa;
   width: 500px;
 }
 .explore span {
@@ -206,6 +209,9 @@ table {
 }
 .explore span button {
   margin-left: 40px;
+}
+.explore span button:focus {
+  fill: yellow;
 }
 .explore .explore-repos-description {
   display: flex;
@@ -221,8 +227,51 @@ table {
   width: 97%;
 }
 
+.my-repositories {
+  padding-bottom: 1.5rem;
+  background: #0f172a;
+  color: #fafafa;
+  width: 24rem;
+}
+.my-repositories .repository {
+  font-size: 1rem;
+}
 .my-repositories .new {
   display: flex;
+}
+.my-repositories .add-repo {
+  display: flex;
+}
+.my-repositories .add-repo .new {
+  margin-left: 10rem;
+}
+.my-repositories .add-repo .top-repositories {
+  margin-left: 1.5rem;
+}
+.my-repositories .repository,
+.my-repositories .show-more-repositories,
+.my-repositories .activity {
+  margin-left: 1.5rem;
+}
+.my-repositories .activity-text {
+  margin: 1.5rem;
+  margin-bottom: 0;
+  width: 17rem;
+}
+.my-repositories .activity-text {
+  padding: 1.5rem;
+  border: 3px solid #e2e8f0;
+  border-style: dashed;
+}
+
+form input {
+  margin-left: 1.5rem;
+  width: 20rem;
+  height: 1.5rem;
+}
+form input:focus {
+  border: 2px solid #0ea5e9;
+  outline: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
