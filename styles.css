@@ -130,13 +130,19 @@ table {
 
 .dashboard {
   display: flex;
+  border-bottom: 1px solid #52525b;
+  padding: 10px;
 }
 .dashboard form {
   margin-left: auto;
 }
 
 .content {
-  width: 350px;
+  width: 30.25rem;
+  position: absolute;
+  /* position it on the center with margin like justyfy-content: center */
+  left: 50%;
+  margin-left: -15.125rem;
 }
 .content .tools-header {
   display: flex;
@@ -155,6 +161,7 @@ table {
 }
 .content article .start_new_repo .check {
   display: flex;
+  margin-bottom: 10px;
 }
 .content article .start_new_repo .check input {
   width: 20px;
@@ -166,19 +173,20 @@ table {
 .content article .Help {
   background: #52525b;
   color: #fafafa;
+  position: relative;
 }
-.content article .Help .help-repository {
+.content article .help-repository {
   margin-bottom: 10px;
 }
-.content article .start-code {
+.content .start-code {
   display: flex;
 }
-.content article .start-code .remove {
+.content .start-code .remove {
   margin-left: auto;
 }
 
 .lastest-changes {
-  width: 500px;
+  width: 30.25rem;
   background: #0f172a;
   color: #fafafa;
 }
@@ -209,7 +217,7 @@ table {
 .explore {
   background: #0f172a;
   color: #fafafa;
-  width: 500px;
+  width: 30.25rem;
 }
 .explore span {
   display: flex;
@@ -235,10 +243,12 @@ table {
 }
 
 .my-repositories {
+  position: fixed;
   padding-bottom: 1.5rem;
   background: #0f172a;
   color: #fafafa;
   width: 24rem;
+  height: 100vh;
 }
 .my-repositories .repository {
   font-size: 1rem;
@@ -279,6 +289,10 @@ form input {
 form input:focus {
   border: 2px solid #0ea5e9;
   outline: none;
+}
+
+body {
+  background: #09090b;
 }
 
 /*# sourceMappingURL=styles.css.map */

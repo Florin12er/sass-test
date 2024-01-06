@@ -2,10 +2,12 @@ $space-between-dot-and-text: 1.5rem;
 $my-repos-width: 24rem;
 
 .my-repositories {
+  position: fixed;
   padding-bottom: $space-between-dot-and-text;
   background: $semi-black-color;
   color: $white-color;
   width: $my-repos-width;
+  height: 100vh;
 
   .repository {
     font-size: 1rem;

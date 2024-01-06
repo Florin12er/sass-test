@@ -1,5 +1,7 @@
 .dashboard {
   display: flex;
+  border-bottom: 1px solid $gray-color;
+  padding: 10px;
 
   form {
     margin-left: auto;
