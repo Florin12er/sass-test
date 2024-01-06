@@ -20,9 +20,21 @@ $width-of-latest-changes: 500px;
 
   }
 
+
   article {
     .start_new_repo {
       background: $gray-color;
+
+      .check {
+        display: flex;
+
+        input {
+          width: 20px;
+          margin: 0;
+        }
+      }
+
+
       color: $white-color;
       padding-bottom: 4.575rem;
 

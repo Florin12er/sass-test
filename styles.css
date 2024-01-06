@@ -153,6 +153,13 @@ table {
   color: #fafafa;
   padding-bottom: 4.575rem;
 }
+.content article .start_new_repo .check {
+  display: flex;
+}
+.content article .start_new_repo .check input {
+  width: 20px;
+  margin: 0;
+}
 .content article .start_new_repo .type_repo {
   display: flex;
 }
