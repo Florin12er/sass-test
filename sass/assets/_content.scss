@@ -1,24 +1,38 @@
 $width-of-home: 30.25rem;
 $width-of-latest-changes: 30.25rem;
+$margin-content : -30.25rem;
+$margin-content-help: -60.5rem;
+$padding : 1rem;
 
+@mixin left($left, $position) {
+  position: $position;
+  left: $left;
+}
+
+@mixin top($top) {
+  top: $top;
+}
 
 .content {
   width: $width-of-home;
-  position: absolute;
-  /* position it on the center with margin like justyfy-content: center */
-  left: 50%;
-  margin-left: -($width-of-home / 2);
+  @include left(35%, absolute);
+  margin-left: calc($margin-content / 2);
 
 
   .tools-header {
     display: flex;
+    color: $white-color;
+
 
     .feedback {
       margin-left: auto;
+      color: $white-color;
+      @include left(100%, relative);
 
     }
 
     .filter {
+      @include left(100%, relative);
       display: flex;
       gap: 3px;
     }
@@ -52,7 +66,9 @@ $width-of-latest-changes: 30.25rem;
     .Help {
       background: $gray-color;
       color: $white-color;
-      position: relative;
+      @include left(100%, absolute);
+      @include top(3rem);
+      width: $width-of-home;
     }
 
     .help-repository {
@@ -61,10 +77,19 @@ $width-of-latest-changes: 30.25rem;
   }
 
   .start-code {
+    color: $white-color;
     display: flex;
+
+    .code {
+      background: $gray-color;
+      border-radius: 30px;
+      height: 24px;
+      width: 24px;
+    }
 
     .remove {
       margin-left: auto;
+      @include left(100%, relative);
     }
   }
 }
@@ -73,6 +98,9 @@ $width-of-latest-changes: 30.25rem;
   width: $width-of-latest-changes;
   background: $semi-black-color;
   color: $white-color;
+  @include left(200%, absolute);
+  @include top(0);
+  padding: $padding;
 
 
   .lastest-changes-text {
@@ -112,6 +140,9 @@ $width-of-latest-changes: 30.25rem;
   background: $semi-black-color;
   color: $white-color;
   width: $width-of-latest-changes;
+  @include left(200%, absolute);
+  @include top(140%);
+  padding: $padding;
 
   span {
     display: flex;
@@ -120,7 +151,7 @@ $width-of-latest-changes: 30.25rem;
       margin-left: 40px;
 
       &:focus {
-        fill: yellow;
+        fill: $yellow-color;
       }
     }
   }
@@ -132,7 +163,7 @@ $width-of-latest-changes: 30.25rem;
     .color {
       width: 20px;
       height: 20px;
-      background: #facc15;
+      background: $yellow-color;
       border-radius: 50%;
     }
   }

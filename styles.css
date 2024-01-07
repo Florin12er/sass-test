@@ -140,17 +140,22 @@ table {
 .content {
   width: 30.25rem;
   position: absolute;
-  /* position it on the center with margin like justyfy-content: center */
-  left: 50%;
+  left: 35%;
   margin-left: -15.125rem;
 }
 .content .tools-header {
   display: flex;
+  color: #fafafa;
 }
 .content .tools-header .feedback {
   margin-left: auto;
+  color: #fafafa;
+  position: relative;
+  left: 100%;
 }
 .content .tools-header .filter {
+  position: relative;
+  left: 100%;
   display: flex;
   gap: 3px;
 }
@@ -173,22 +178,38 @@ table {
 .content article .Help {
   background: #52525b;
   color: #fafafa;
-  position: relative;
+  position: absolute;
+  left: 100%;
+  top: 3rem;
+  width: 30.25rem;
 }
 .content article .help-repository {
   margin-bottom: 10px;
 }
 .content .start-code {
+  color: #fafafa;
   display: flex;
+}
+.content .start-code .code {
+  background: #52525b;
+  border-radius: 30px;
+  height: 24px;
+  width: 24px;
 }
 .content .start-code .remove {
   margin-left: auto;
+  position: relative;
+  left: 100%;
 }
 
 .lastest-changes {
   width: 30.25rem;
   background: #0f172a;
   color: #fafafa;
+  position: absolute;
+  left: 200%;
+  top: 0;
+  padding: 1rem;
 }
 .lastest-changes .lastest-changes-text .dot {
   position: absolute;
@@ -218,6 +239,10 @@ table {
   background: #0f172a;
   color: #fafafa;
   width: 30.25rem;
+  position: absolute;
+  left: 200%;
+  top: 140%;
+  padding: 1rem;
 }
 .explore span {
   display: flex;
@@ -226,7 +251,7 @@ table {
   margin-left: 40px;
 }
 .explore span button:focus {
-  fill: yellow;
+  fill: #fbbf24;
 }
 .explore .explore-repos-description {
   display: flex;
@@ -235,7 +260,7 @@ table {
 .explore .explore-repos-description .color {
   width: 20px;
   height: 20px;
-  background: #facc15;
+  background: #fbbf24;
   border-radius: 50%;
 }
 .explore hr {

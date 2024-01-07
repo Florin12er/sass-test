@@ -5,10 +5,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link rel="stylesheet" href="styles.css" />
+      <script src="javascript/scroll.js" defer></script>
    </head>
    <body>
       <header>
-         <div class="dashboard" id="dashboard">
+         <div class="dashboard hidden" id="dashboard">
             <button class="menu" id="menu">
                <svg
                   width="24"
@@ -155,14 +156,9 @@
             </div>
             <article>
                <div class="start-code" id="start-code">
-                  <img
-                     width="24"
-                     height="24"
-                     src="image/xml.png"
-                     alt="start to code image"
-                     class="code"
-                     id="code"
-                     />
+                   <div class="code" id="code">
+                   <svg width="24" height="24" fill= "white"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>code-tags</title><path d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z" /></svg>
+                  </div>
                   <div class="write-code-title" id="write-code-title">
                      Start writting code
                   </div>
