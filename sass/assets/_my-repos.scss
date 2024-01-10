@@ -2,12 +2,42 @@ $space-between-dot-and-text: 1.5rem;
 $my-repos-width: 24rem;
 
 .my-repositories {
+  overflow: scroll;
   position: fixed;
   padding-bottom: $space-between-dot-and-text;
   background: $semi-black-color;
   color: $white-color;
   width: $my-repos-width;
   height: 100vh;
+
+  input[type="checkbox"] {
+    height: 5rem;
+    width: 5rem;
+    display: block;
+    appearance: none;
+  }
+
+  label {
+    z-index: -1;
+    position: relative;
+    bottom: 2.75rem;
+    left: 1.25rem;
+    padding: 1rem;
+    color: $white-color;
+    cursor: pointer;
+  }
+
+  label:before {
+    content: "Read More";
+  }
+
+  input[type="checkbox"]:checked~label:before {
+    content: "Read Less";
+  }
+
+  .extra:has(~ input[type="checkbox"]:checked) {
+    display: none;
+  }
 
   .repository {
     font-size: 1rem;
