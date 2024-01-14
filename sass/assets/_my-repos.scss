@@ -1,7 +1,23 @@
 $space-between-dot-and-text: 1.5rem;
 $my-repos-width: 24rem;
 
+.modal-content {
+  z-index: 1;
+  visibility: hidden;
+  display: grid;
+  position: absolute;
+  background: $white-color;
+  left: 20%;
+  gap: 5px;
+
+  button {
+    width: 5rem;
+  }
+
+}
+
 .my-repositories {
+  z-index: 0;
   overflow: scroll;
   position: fixed;
   padding-bottom: $space-between-dot-and-text;
@@ -10,14 +26,14 @@ $my-repos-width: 24rem;
   width: $my-repos-width;
   height: 100vh;
 
-  input[type="checkbox"] {
+  .show-more-repositories[type="checkbox"] {
     height: 5rem;
     width: 5rem;
     display: block;
     appearance: none;
   }
 
-  label {
+  .show-more-label {
     z-index: -1;
     position: relative;
     bottom: 2.75rem;
@@ -27,11 +43,11 @@ $my-repos-width: 24rem;
     cursor: pointer;
   }
 
-  label:before {
+  .show-more-label:before {
     content: "Read More";
   }
 
-  input[type="checkbox"]:checked~label:before {
+  .show-more-repositories[type="checkbox"]:checked~label:before {
     content: "Read Less";
   }
 

@@ -45,6 +45,47 @@ $padding : 1rem;
       background: $gray-color;
 
       .check {
+        .round-checkbox {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          font-size: 20px;
+
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+          }
+
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: $black-color;
+            border: 2px solid $black-color;
+            border-radius: 50%;
+          }
+
+          input:checked~.checkmark {
+            background-color: $input-outline-color;
+            border: 2px solid $input-outline-color;
+          }
+
+          input:checked~.checkmark:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            background-color: $black-color;
+            border-radius: 50%;
+          }
+        }
+
         display: flex;
         margin-bottom: 10px;
 
@@ -52,6 +93,7 @@ $padding : 1rem;
           width: 20px;
           margin: 0;
         }
+
       }
 
 

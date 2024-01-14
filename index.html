@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link rel="stylesheet" href="styles.css" />
-      <script src="javascript/scroll.js" defer></script>
+      <script src="javascript/main.js" type="module" defer></script>
    </head>
    <body>
       <header>
@@ -196,7 +196,10 @@
                         <div class="public_or_private" id="public_or_private">
                            <label>
                                <div class="check" id="check">
-                                   <input type="radio" value="public" id="public" />
+                                   <label class="round-checkbox">
+                                   <input type="radio" name="public" value="public" id="public" />
+                                   <span class="checkmark"></span>
+                                   </label>
                               <svg
                                  xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 24 24"
@@ -219,7 +222,10 @@
                            </label>
                            <label>
                               <div class="check" id="check">
-                                  <input type="radio" value="private" id="private" />
+                                  <label class="round-checkbox">
+                                    <input type="radio" name="public" value="private" id="private" />
+                                   <span class="checkmark"></span>
+                                   </label>
                               <svg
                                  xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 24 24"
@@ -242,7 +248,7 @@
                               </div>
                            </label>
                         </div>
-                        <button class="new_repo" id="new_repo">
+                        <button type="button" class="new_repo" id="new_repo">
                         Create new Repository
                         </button>
                      </form>
@@ -586,6 +592,23 @@
          </div>
          <div class="recent" id="recent"></div>
       </div>
+      <div class = "modal" id = "modal">
+          <div class = "modal-content" id = "modal-content">
+              <label for="name-repo">Enter your name</label>
+              <input type="text" id="name-repo" placeholder="Enter your name"/>
+              <div class="public_or_private" id="public_or_private">
+                  <div class="Public" id="Public">
+                  <label for="public-or-private">Public</label>
+                  <input type="radio" name="public-or-private" id="public-or-private" />
+                  </div>
+                  <div class="Private" id="Private">
+                  <label for="private-or-public">Private</label>
+                  <input type="radio" name="public-or-private" id="private-or-public" />
+                  </div>
+              </div>
+              <button type="submit" id="add-repo">submit</button>
+                  <button id="cancel-repo">cancel</button>
+          </div>
       <aside class="my-repositories" id="my-repositories">
           <div class="add-repo" id="add-repo">
          <div class="top-repositories" id="top-repositories">Top Repositories</div>
@@ -865,7 +888,7 @@
          <input type="checkbox" class="show-more-repositories" id="show-more-repositories"
             ></input
             >
-           <label for="show-more-repositories"></label
+           <label class="show-more-label" for="show-more-repositories"></label
          <div class="activity" id="activity">
             <p>Recent activity</p>
          </div>
